@@ -1,7 +1,14 @@
 package ml_cucumber_selenium_jvm_assessment.steps;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 import cucumber.api.PendingException;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -15,6 +22,14 @@ public class CheckWebsiteElementsSteps {
 	
 	public WebDriver driver;
 	
+	@Before()
+	public void setup() {
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Camera\\Documents\\GitHub\\ml-cucumber-selenium-jvm-assessment\\src\\test\\java\\ml_cucumber_selenium_jvm_assessment\\resources\\geckodriver.exe");
+		this.driver = new FirefoxDriver();
+		this.driver.manage().window().maximize();
+		this.driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+	}
+	
 	public void Steps() 
 	{
 		 driver = WebHooks.driver;
@@ -26,13 +41,19 @@ public class CheckWebsiteElementsSteps {
 		String url = "https://www.magicleap.com";
 		driver.get(url);
 
-		//throw new PendingException();
+		throw new PendingException();
 	}
 
 	@Given("^User scrolls down to the \"([^\"]*)\" section$")
 	public void user_scrolls_down_to_the_section(String arg1) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		// Get the content or container    
+		WebElement content = driver.findElement(By.id("contentText"));
+
+		//Get the table of users
+		WebElement magicLeapOneCreatorEdition = driver.findElement(By.xpath("//*[@id=\"footer_email\"]"));
+		
+	    //throw new PendingException();
 	}
 
 	@When("^User reaches the section above \"([^\"]*)\"$")

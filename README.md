@@ -7,5 +7,11 @@
 #### Pre-requisites
 - [Java8] (https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-### Extent Graphic Report - 
+##### Steps 
+- git clone
+- mvn clean compile
+- mvn test
+- open target/report.html
+
+### Extent Graphic Report Location - 
 /target/report.html

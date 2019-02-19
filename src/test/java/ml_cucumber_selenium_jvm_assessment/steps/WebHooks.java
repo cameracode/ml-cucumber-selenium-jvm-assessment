@@ -3,6 +3,9 @@ package ml_cucumber_selenium_jvm_assessment.steps;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -18,10 +21,10 @@ public class WebHooks
     public void openBrowser() 
     {
         System.out.println("Starting scenario preprocessing...");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Camera\\Google Drive\\resume\\Devops\\MagicLeap\\Assessment\\ML_Selenium_Assessment\\ml-cucumber-selenium-jvm-assessment\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Camera\\Documents\\GitHub\\ml-cucumber-selenium-jvm-assessment\\src\\test\\java\\ml_cucumber_selenium_jvm_assessment\\resources\\chromedriver.exe");
         driver = new ChromeDriver();
-        driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
+        driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
     }
 
 

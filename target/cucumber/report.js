@@ -13,7 +13,11 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5271649500,
+  "duration": 6869433400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 7981178000,
   "status": "passed"
 });
 formatter.background({
@@ -37,9 +41,9 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_loads_the_home_page()"
 });
 formatter.result({
-  "duration": 80309500,
-  "error_message": "java.lang.NullPointerException\r\n\tat ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_loads_the_home_page(CheckWebsiteElementsSteps.java:27)\r\n\tat ✽.Given User loads the home page(CheckWebsiteElements.feature:5)\r\n",
-  "status": "failed"
+  "duration": 35630118400,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_loads_the_home_page(CheckWebsiteElementsSteps.java:44)\r\n\tat ✽.Given User loads the home page(CheckWebsiteElements.feature:5)\r\n",
+  "status": "pending"
 });
 formatter.match({
   "arguments": [
@@ -101,14 +105,16 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
-formatter.write("Current Page URL is data:,");
-formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 1140922600,
+  "duration": 1413443900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4027097800,
+  "duration": 11093224300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 13518350000,
   "status": "passed"
 });
 formatter.background({
@@ -132,9 +138,9 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_loads_the_home_page()"
 });
 formatter.result({
-  "duration": 172800,
-  "error_message": "java.lang.NullPointerException\r\n\tat ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_loads_the_home_page(CheckWebsiteElementsSteps.java:27)\r\n\tat ✽.Given User loads the home page(CheckWebsiteElements.feature:5)\r\n",
-  "status": "failed"
+  "duration": 52115785700,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_loads_the_home_page(CheckWebsiteElementsSteps.java:44)\r\n\tat ✽.Given User loads the home page(CheckWebsiteElements.feature:5)\r\n",
+  "status": "pending"
 });
 formatter.match({
   "arguments": [
@@ -211,14 +217,16 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
-formatter.write("Current Page URL is data:,");
-formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 1041848900,
+  "duration": 12749242100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3805415100,
+  "duration": 26713998600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 15897296700,
   "status": "passed"
 });
 formatter.background({
@@ -242,9 +250,9 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_loads_the_home_page()"
 });
 formatter.result({
-  "duration": 219100,
-  "error_message": "java.lang.NullPointerException\r\n\tat ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_loads_the_home_page(CheckWebsiteElementsSteps.java:27)\r\n\tat ✽.Given User loads the home page(CheckWebsiteElements.feature:5)\r\n",
-  "status": "failed"
+  "duration": 57672839800,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_loads_the_home_page(CheckWebsiteElementsSteps.java:44)\r\n\tat ✽.Given User loads the home page(CheckWebsiteElements.feature:5)\r\n",
+  "status": "pending"
 });
 formatter.match({
   "arguments": [
@@ -321,10 +329,8 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
-formatter.write("Current Page URL is data:,");
-formatter.embedding("image/png", "embedded2.png");
 formatter.after({
-  "duration": 1080202000,
+  "duration": 2848333700,
   "status": "passed"
 });
 });
