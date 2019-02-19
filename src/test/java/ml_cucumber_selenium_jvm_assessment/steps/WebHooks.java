@@ -11,24 +11,16 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebHooks 
 {
     public static WebDriver driver;
 
 
-    @Before
-    public void openBrowser() 
-    {
-        System.out.println("Starting scenario preprocessing...");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Camera\\Documents\\GitHub\\ml-cucumber-selenium-jvm-assessment\\src\\test\\java\\ml_cucumber_selenium_jvm_assessment\\resources\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-    }
+    
 
-
-    @After
+    /*@After
     //	Embed a screenshot in the test report if test is marked as failed
 	public void embedScreenshot(Scenario scenario) 
     {
@@ -49,5 +41,5 @@ public class WebHooks
 	    
 	    System.out.println("Wrapping up scenario...");
 	    driver.quit();
-	}
+	}*/
 }
