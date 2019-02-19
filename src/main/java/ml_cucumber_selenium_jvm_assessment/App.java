@@ -1,4 +1,4 @@
-package ml_cucumber_selenium_jvm_assessment.ml_cucumber_selenium_jvm_assessment;
+package ml_cucumber_selenium_jvm_assessment;
 
 /**
  * Hello world!

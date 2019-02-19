@@ -23,9 +23,9 @@ public class CheckWebsiteElementsSteps {
 	@Given("^User loads the home page$")
 	public void user_loads_the_home_page() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-	    String url = "https://www.magicleap.com";
+		String url = "https://www.magicleap.com";
 		driver.get(url);
-		
+
 		//throw new PendingException();
 	}
 
