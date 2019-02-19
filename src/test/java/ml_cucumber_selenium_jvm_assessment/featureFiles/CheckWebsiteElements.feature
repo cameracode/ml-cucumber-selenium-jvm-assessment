@@ -17,11 +17,13 @@ Feature: Quality Engineer Assignment that verifies various elements of the Magic
 		And  User fills in a valid e-mail address
 		And  User fills in a nickname
 		And  User selects an option from the drop-down
-		Then User should be shown the response "Thanks! See ya soon!" upon clicking the "Join Us" button 
+		And  User clicks the "Join Us" button   
+		Then User should be shown the response "Thanks! See ya soon!"
 	
 	# Test 2
 	Scenario: Verify that the "Keep in touch" form response is not "See you in 2019"
 		And  User fills in a valid e-mail address
 		And  User fills in a nickname
 		And  User selects an option from the drop-down
-		Then The form response is not "See you in 2019" after "Join Us" button is clicked
+		And  User clicks the "Join Us" button for the second time
+		Then The form response is not "See you in 2019"

@@ -108,8 +108,9 @@ public class CheckWebsiteElementsSteps {
 	// start 1 Section 2
 	@When("^User reaches \"([^\"]*)\"$")
 	public void user_reaches(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		// find Keep in touch section
+		WebElement keepInTouch = driver.findElement(By.xpath("//*[contains(text(), 'Keep in touch')]"));
+		keepInTouch.click();
 	}
 
 	@When("^User fills in a valid e-mail address$")
@@ -118,11 +119,10 @@ public class CheckWebsiteElementsSteps {
 		WebElement footerEmail = driver.findElement(By.xpath("//*[@id=\"footer_email\"]"));
 		footerEmail.click();
 		
-		// TODO fill element with a valid e-mail address
-		WebElement inputFooterEmail = driver.findElement(By.xpath("//*[@id=\"footer_email\"]")).setAttribute("email", "ebenofthecamera@gmail.com");
-		// TODO assert if invalid type of e-mail
+		// fill element with a valid e-mail address
+		footerEmail.sendKeys("RickSanchez@c137.com");
 		
-	    //throw new PendingException();
+		// TODO assert if invalid type of e-mail
 	}
 	
 	@When("^User fills in a nickname$")
@@ -131,9 +131,8 @@ public class CheckWebsiteElementsSteps {
 		WebElement footerNickname = driver.findElement(By.xpath("//*[@id=\"footer_nickname\"]"));
 		footerNickname.click();
 		
-		// TODO fill element with a nickname
-		
-	    //throw new PendingException();
+		// fill element with a nickname
+		footerNickname.sendKeys("Rick Sanchez");
 	}
 
 	@When("^User selects an option from the drop-down$")
@@ -141,33 +140,49 @@ public class CheckWebsiteElementsSteps {
 	    // find footer drop-down for Keep in touch form
 		WebElement footerDropdown = driver.findElement(By.xpath("//*[@id=\"footer_i_am_a\"]"));
 		footerDropdown.click();
-	    
-		//throw new PendingException();
 	}
 	
-	@Then("^User should be shown the response \"([^\"]*)\" upon clicking the \"([^\"]*)\" button$")
-	public void user_should_be_shown_the_response_upon_clicking_the_button(String arg1, String arg2) throws Throwable {
-	    // find Join Us button and click submit
+	@When("^User clicks the \"([^\"]*)\" button$")
+	public void user_clicks_the_button(String arg1) throws Throwable {
+		// find Join Us button and click submit
 		WebElement joinUsBtn = driver.findElement(By.xpath("//*[@id=\"footer-submit-button\"]/div"));
 		joinUsBtn.click();
-		
-		// TODO verify response appears
+	}
+
+	@Then("^User should be shown the response \"([^\"]*)\"$")
+	public void user_should_be_shown_the_response(String arg1) throws Throwable {
+		// verify response appears 
+		WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]"));
 		//WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[@id=\"cta-thanks-text\"]"));
-		//joinUsBtnResponse.click();
+		joinUsBtnResponse.click();
 		
-	    // throw new PendingException();
+		Assert.assertEquals(true, joinUsBtnResponse.isDisplayed());
+		
+		if (joinUsBtnResponse.isDisplayed()) {
+            System.out.println("Found the text element: Thanks! See ya Soon!");
+        } else {
+            throw new IllegalStateException("Cannot find the text element: Thanks! See ya Soon!");
+        }
 	}
 	
 	// Start Test 2
-	@When("^User submits the \"([^\"]*)\" form$")
-	public void user_submits_the_form(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	@Given("^User clicks the \"([^\"]*)\" button for the second time$")
+	public void user_clicks_the_button_for_the_second_time(String arg1) throws Throwable {
+		// find Join Us button and click submit
+		WebElement joinUsBtn = driver.findElement(By.xpath("//*[@id=\"footer-submit-button\"]/div"));
+		joinUsBtn.click();
 	}
 
-	@Then("^The form response is not \"([^\"]*)\" after \"([^\"]*)\" button is clicked$")
-	public void the_form_response_is_not_after_button_is_clicked(String arg1, String arg2) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	@Then("^The form response is not \"([^\"]*)\"$")
+	public void the_form_response_is_not(String arg1) throws Throwable {
+		// verify response does not appear
+		WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[contains(text(), 'See you in 2019')]"));
+		Assert.assertEquals(true, joinUsBtnResponse.isDisplayed());
+		
+		/*WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[@id=\"cta-thanks-text\"]"));
+		if (joinUsBtnResponse.isDisplayed() != true)
+		{
+			Assert.assertEquals(false, joinUsBtnReesponse.isDisplayed());
+		}*/
 	}
 }
