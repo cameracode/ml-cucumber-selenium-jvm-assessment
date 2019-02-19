@@ -196,7 +196,7 @@ public class CheckWebsiteElementsSteps {
 		if (element.isDisplayed()) {
             System.out.println("Found the text element: Thanks! See ya Soon!");
         } else {
-            throw new IllegalStateException("Cannot find the text element: Thanks! See ya Soon!");
+            throw new IllegalStateException("Cannot find the text element: See you in 2019");
         }
 		
 		
