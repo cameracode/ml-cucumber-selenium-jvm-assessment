@@ -23,7 +23,7 @@ Cucumber Eclipse Plugin Manual Install  -
 3. Now Restart your Eclipse after completion of instruction.
 4. Now latest version(ex. 0.0.18) of cucumber-eclipse plugin is installed successfully in your Eclipse.
 
-##### Steps 
+##### Steps to run automated tests
 - git clone
 - mvn clean compile
 - mvn test
