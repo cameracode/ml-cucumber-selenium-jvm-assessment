@@ -59,4 +59,4 @@ Cucumber Eclipse Plugin Manual Install  -
 - open target/report.html
 
 ### Extent Graphic Report Location - 
-[Extent /target/report.html](../master/src/test/java/ml_cucumber_selenium_jvm_assessment/ml_cucumber_selenium_jvm_assessment.images/Report.png)
+[Extent /target/report.html](../master/src/test/java/ml_cucumber_selenium_jvm_assessment/ml_cucumber_selenium_jvm_assessment.image/Report.PNG)
