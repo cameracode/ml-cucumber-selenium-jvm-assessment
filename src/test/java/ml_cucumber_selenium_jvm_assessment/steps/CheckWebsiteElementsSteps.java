@@ -1,5 +1,7 @@
 package ml_cucumber_selenium_jvm_assessment.steps;
 
+import static org.testng.Assert.assertTrue;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -142,6 +144,9 @@ public class CheckWebsiteElementsSteps {
 	    // find footer drop-down for Keep in touch form
 		WebElement footerDropdown = driver.findElement(By.xpath("//*[@id=\"footer_i_am_a\"]"));
 		footerDropdown.click();
+		
+		// fill element with dropdown item
+		footerDropdown.sendKeys("");
 	}
 	
 	@When("^User clicks the \"([^\"]*)\" button$")
@@ -179,9 +184,29 @@ public class CheckWebsiteElementsSteps {
 
 	@Then("^The form response is not \"([^\"]*)\"$")
 	public void the_form_response_is_not(String arg1) throws Throwable {
+		// verify response appears 
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement element = wait.until(
+		        ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]")));
+		//WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]"));
+		element.click();
+		
+		Assert.assertEquals(true, element.isDisplayed());
+		
+		if (element.isDisplayed()) {
+            System.out.println("Found the text element: Thanks! See ya Soon!");
+        } else {
+            throw new IllegalStateException("Cannot find the text element: Thanks! See ya Soon!");
+        }
+		
+		
 		// verify response does not appear
-		WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[contains(text(), 'See you in 2019')]"));
-		Assert.assertEquals(true, joinUsBtnResponse.isDisplayed());
+		//String actualString = driver.findElement(By.xpath("//*[contains(text(), 'See you in 2019')]")).getText();
+		//assertTrue(driver.findElement(By.xpath("//*[contains(text(), 'Thanks! See ya Soon!')]")).getText().contains("Thanks! See ya Soon!")); 
+		
+		
+		//WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[contains(text(), 'See you in 2019')]"));
+		//Assert.assertEquals(true, joinUsBtnResponse.isDisplayed());
 		
 		/*WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[@id=\"cta-thanks-text\"]"));
 		if (joinUsBtnResponse.isDisplayed() != true)
