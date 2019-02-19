@@ -10,6 +10,7 @@
 ##### Scenario 1
 - [x] use the magic leap homepage https://www.magicleap.com
 - [x] find phrase - "Magic Leap One Creator Edtion" on home page
+- [x] Use some form of error validation, an assert is suggested
 
 ##### Scenario 2
 - [x] use the magic leap homepage https://www.magicleap.com
@@ -19,7 +20,6 @@
 - [x] select drop-down element "//*[@id="footer_i_am_a"]" ("Tell us about about yourself" drop-down for "Keep in touch" form)
 - [x] Click() "//*[@id="footer-submit-button"]/div" button
 - [x] Verify response "Thanks! See ya soon!" once "//*[@id="footer-submit-button"]/div" has been clicked
-- [x] Use some form of error validation, an assert is suggested
 
 ### Test 2:
 - [x] use the magic leap homepage https://www.magicleap.com
@@ -29,6 +29,12 @@
 - [x] use xpath - select drop-down element "//*[@id="footer_i_am_a"]" ("Tell us about about yourself" drop-down for "Keep in touch" form)
 - [x] Click() "//*[@id="footer-submit-button"]/div" button
 - [x] Verify response is not "See you in 2019" once "//*[@id="footer-submit-button"]/div" has been clicked
+
+### Test 3:
+- [x] Wrote a performance test that does over 1000 GET's of https://www.magicleap.com utilizing PowerShell's Invoke-WebRequest and generated a report utilizing Google Charts & ConvertTo-HTML
+- PowerSHell Report Name - ml_load_report.html
+- [x] Wrote a performance test that does over 1000 GET's of https://www.magicleap.com with bash and utilizing Apache Benchmark that outputs a report to CSV
+- Bash report name - report_apache_benchmark.csv
 
 ### Running the Tests (based on Windows 10 x64):
 #### Pre-requisites
@@ -45,10 +51,12 @@ Cucumber Eclipse Plugin Manual Install  -
 4. Now latest version(ex. 0.0.18) of cucumber-eclipse plugin is installed successfully in your Eclipse.
 
 ##### Steps to run automated tests
-- git clone
+- git clone https://github.com/cameracode/ml-cucumber-selenium-jvm-assessment.git (Test 1 & 2 cucumber-java)
+- git clone https://github.com/cameracode/ml-cucumber-js.git (Test 1 & 2 cucumber-js)
+- git clone https://github.com/cameracode/ml-performance-test.git (Test 3 powershell & bash) 
 - mvn clean compile
 - mvn test
 - open target/report.html
 
 ### Extent Graphic Report Location - 
-/target/report.html
+[Extent /target/report.html](../master/src/test/java/ml_cucumber_selenium_jvm_assessment/ml_cucumber_selenium_jvm_assessment.images/Report.png)
