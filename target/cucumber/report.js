@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 6261653101,
+  "duration": 5084290600,
   "status": "passed"
 });
 formatter.background({
@@ -37,7 +37,7 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_loads_the_home_page()"
 });
 formatter.result({
-  "duration": 1835979400,
+  "duration": 2734929100,
   "status": "passed"
 });
 formatter.match({
@@ -50,9 +50,8 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(String)"
 });
 formatter.result({
-  "duration": 28331566700,
-  "error_message": "java.lang.IllegalStateException: Cannot find the section: Keep in touch!\r\n\tat ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(CheckWebsiteElementsSteps.java:67)\r\n\tat ✽.And User scrolls down to the \"Keep in touch\" section(CheckWebsiteElements.feature:6)\r\n",
-  "status": "failed"
+  "duration": 149570700,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -88,7 +87,8 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_reaches_the_section(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 106543200,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -100,10 +100,11 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.the_phrase_exists(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 223174100,
+  "status": "passed"
 });
 formatter.before({
-  "duration": 4385198700,
+  "duration": 3932939000,
   "status": "passed"
 });
 formatter.background({
@@ -127,7 +128,7 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_loads_the_home_page()"
 });
 formatter.result({
-  "duration": 1697255900,
+  "duration": 1056028500,
   "status": "passed"
 });
 formatter.match({
@@ -140,9 +141,8 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(String)"
 });
 formatter.result({
-  "duration": 7122384400,
-  "error_message": "java.lang.IllegalStateException: Cannot find the section: Keep in touch!\r\n\tat ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(CheckWebsiteElementsSteps.java:67)\r\n\tat ✽.And User scrolls down to the \"Keep in touch\" section(CheckWebsiteElements.feature:6)\r\n",
-  "status": "failed"
+  "duration": 1894674700,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -197,7 +197,9 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_reaches(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2267700,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_reaches(CheckWebsiteElementsSteps.java:112)\r\n\tat ✽.When User reaches \"Keep in touch\"(CheckWebsiteElements.feature:16)\r\n",
+  "status": "pending"
 });
 formatter.match({
   "location": "CheckWebsiteElementsSteps.user_fills_in_a_valid_e_mail_address()"
@@ -234,7 +236,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.before({
-  "duration": 4365906701,
+  "duration": 3812961100,
   "status": "passed"
 });
 formatter.background({
@@ -258,7 +260,7 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_loads_the_home_page()"
 });
 formatter.result({
-  "duration": 1739172801,
+  "duration": 2745871600,
   "status": "passed"
 });
 formatter.match({
@@ -271,9 +273,8 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(String)"
 });
 formatter.result({
-  "duration": 5833896200,
-  "error_message": "java.lang.IllegalStateException: Cannot find the section: Keep in touch!\r\n\tat ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(CheckWebsiteElementsSteps.java:67)\r\n\tat ✽.And User scrolls down to the \"Keep in touch\" section(CheckWebsiteElements.feature:6)\r\n",
-  "status": "failed"
+  "duration": 263757500,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -313,19 +314,22 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_fills_in_a_valid_e_mail_address()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 122437400,
+  "status": "passed"
 });
 formatter.match({
   "location": "CheckWebsiteElementsSteps.user_fills_in_a_nickname()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 161898700,
+  "status": "passed"
 });
 formatter.match({
   "location": "CheckWebsiteElementsSteps.user_selects_an_option_from_the_drop_down()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 129585700,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -341,6 +345,8 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.the_form_response_is_not_after_button_is_clicked(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 336700,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.the_form_response_is_not_after_button_is_clicked(CheckWebsiteElementsSteps.java:171)\r\n\tat ✽.Then The form response is not \"See you in 2019\" after \"Join Us\" button is clicked(CheckWebsiteElements.feature:27)\r\n",
+  "status": "pending"
 });
 });

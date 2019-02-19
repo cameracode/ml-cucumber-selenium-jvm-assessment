@@ -32,7 +32,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -46,7 +45,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 18, 2019 11:59:54 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 19, 2019 07:22:08 AM</span>
 				</a>
 			</li>
 			<li>
@@ -72,7 +71,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
@@ -134,10 +132,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='17.647%'><span class='strong'>3</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='76.471%'><span class='strong'>13</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='17.647%'>3</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='64.706%'>11</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='23.529%'>4</span> others
 				</div>
 			</div>
 		</div>
@@ -149,10 +147,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='17.647%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='73.333%'><span class='strong'>11</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='17.647%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='64.706%'>11</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='26.667%'>4</span> others
 				</div>
 			</div>
 		</div>
@@ -167,17 +165,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf skip' status='skip' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Quality Engineer Assignment that verifies various elements of the Magic Leap home page</span>
-						<span class='test-time'>Feb 18, 2019 11:59:54 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Feb 19, 2019 07:22:08 AM</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 18, 2019 11:59:54 PM</span>
-	<span class='label end-time'>Feb 19, 2019 12:00:56 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 1s+769ms</span>
+	<span class='label start-time'>Feb 19, 2019 07:22:08 AM</span>
+	<span class='label end-time'>Feb 19, 2019 07:22:30 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+528ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -186,19 +184,19 @@
 	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1  fail' status='fail' test-id='2'>
+				<li class='node level-1  pass' status='pass' test-id='2'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Scenario: Verify that phrase exists on home page</div>						
-						<span class='node-time'>Feb 18, 2019 11:59:54 PM</span>
-						<span class='node-duration'>0h 0m 36s+465ms</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='node-time'>Feb 19, 2019 07:22:08 AM</span>
+						<span class='node-duration'>0h 0m 8s+322ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-2 leaf pass' status='pass' test-id='3'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Given User loads the home page</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:00 AM</span>
-						<span class='node-duration'>0h 0m 1s+838ms</span>
+						<span class='node-time'>Feb 19, 2019 07:22:13 AM</span>
+						<span class='node-duration'>0h 0m 2s+737ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -214,7 +212,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>12:00:02 AM</td>
+													<td class='timestamp'>7:22:16 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -222,12 +220,12 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf fail' status='fail' test-id='4'>
+				<li class='node level-2 leaf pass' status='pass' test-id='4'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And User scrolls down to the "Keep in touch" section</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:02 AM</span>
-						<span class='node-duration'>0h 0m 28s+338ms</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='node-time'>Feb 19, 2019 07:22:16 AM</span>
+						<span class='node-duration'>0h 0m 0s+151ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -240,25 +238,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>12:00:30 AM</td>
-													<td class='step-details'><pre>java.lang.IllegalStateException: Cannot find the section: Keep in touch!
-	at ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(CheckWebsiteElementsSteps.java:67)
-	at ✽.And User scrolls down to the "Keep in touch" section(CheckWebsiteElements.feature:6)
-</pre></td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:22:16 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf skip' status='skip' test-id='5'>
+				<li class='node level-2 leaf pass' status='pass' test-id='5'>
 					<div class='collapsible-header'>
 						<div class='node-name'>When User reaches the section "Magic Leap One Creator Edition"</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:30 AM</span>
-						<span class='node-duration'>0h 0m 0s+2ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Feb 19, 2019 07:22:16 AM</span>
+						<span class='node-duration'>0h 0m 0s+108ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -271,22 +266,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>12:00:30 AM</td>
-													<td class='step-details'>skipped</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:22:16 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf skip' status='skip' test-id='6'>
+				<li class='node level-2 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then The phrase "Magic Leap One Creator Edition" exists</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:30 AM</span>
-						<span class='node-duration'>0h 0m 0s+1ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Feb 19, 2019 07:22:16 AM</span>
+						<span class='node-duration'>0h 0m 0s+224ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -299,10 +294,10 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>12:00:30 AM</td>
-													<td class='step-details'>skipped</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:22:16 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
@@ -311,19 +306,19 @@
 				</li>
 						</ul>
 				</li>
-				<li class='node level-1  fail' status='fail' test-id='7'>
+				<li class='node level-1  skip' status='skip' test-id='7'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Scenario: Fill out the "Keep in touch" section</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:30 AM</span>
-						<span class='node-duration'>0h 0m 13s+219ms</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='node-time'>Feb 19, 2019 07:22:16 AM</span>
+						<span class='node-duration'>0h 0m 6s+902ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-2 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Given User loads the home page</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:35 AM</span>
-						<span class='node-duration'>0h 0m 1s+698ms</span>
+						<span class='node-time'>Feb 19, 2019 07:22:20 AM</span>
+						<span class='node-duration'>0h 0m 1s+56ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -339,7 +334,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>12:00:37 AM</td>
+													<td class='timestamp'>7:22:21 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -347,12 +342,12 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf fail' status='fail' test-id='9'>
+				<li class='node level-2 leaf pass' status='pass' test-id='9'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And User scrolls down to the "Keep in touch" section</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:37 AM</span>
-						<span class='node-duration'>0h 0m 7s+123ms</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='node-time'>Feb 19, 2019 07:22:21 AM</span>
+						<span class='node-duration'>0h 0m 1s+895ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -365,51 +360,28 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>12:00:44 AM</td>
-													<td class='step-details'><pre>java.lang.IllegalStateException: Cannot find the section: Keep in touch!
-	at ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(CheckWebsiteElementsSteps.java:67)
-	at ✽.And User scrolls down to the "Keep in touch" section(CheckWebsiteElements.feature:6)
-</pre></td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:22:23 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf skip' status='skip' test-id='10'>
+				<li class='node level-2 leaf pass' status='pass' test-id='10'>
 					<div class='collapsible-header'>
 						<div class='node-name'>When User reaches "Keep in touch"</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:44 AM</span>
+						<span class='node-time'>Feb 19, 2019 07:22:23 AM</span>
 						<span class='node-duration'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>12:00:44 AM</td>
-													<td class='step-details'>skipped</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
 				</li>
 				<li class='node level-2 leaf skip' status='skip' test-id='11'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And User fills in a valid e-mail address</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:44 AM</span>
+						<span class='node-time'>Feb 19, 2019 07:22:23 AM</span>
 						<span class='node-duration'>0h 0m 0s+1ms</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
@@ -426,7 +398,7 @@
 										<tbody>
 												<tr class='log' status='skip'>
 													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>12:00:44 AM</td>
+													<td class='timestamp'>7:22:23 AM</td>
 													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
@@ -437,8 +409,8 @@
 				<li class='node level-2 leaf skip' status='skip' test-id='12'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And User fills in a nickname</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:44 AM</span>
-						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='node-time'>Feb 19, 2019 07:22:23 AM</span>
+						<span class='node-duration'>0h 0m 0s+0ms</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
@@ -454,7 +426,7 @@
 										<tbody>
 												<tr class='log' status='skip'>
 													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>12:00:44 AM</td>
+													<td class='timestamp'>7:22:23 AM</td>
 													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
@@ -465,7 +437,7 @@
 				<li class='node level-2 leaf skip' status='skip' test-id='13'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And User selects an option from the drop-down</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:44 AM</span>
+						<span class='node-time'>Feb 19, 2019 07:22:23 AM</span>
 						<span class='node-duration'>0h 0m 0s+0ms</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
@@ -482,7 +454,7 @@
 										<tbody>
 												<tr class='log' status='skip'>
 													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>12:00:44 AM</td>
+													<td class='timestamp'>7:22:23 AM</td>
 													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
@@ -493,7 +465,7 @@
 				<li class='node level-2 leaf skip' status='skip' test-id='14'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then User should be shown the response "Thanks! See ya soon!" upon clicking the "Join Us" button</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:44 AM</span>
+						<span class='node-time'>Feb 19, 2019 07:22:23 AM</span>
 						<span class='node-duration'>0h 0m 0s+0ms</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
@@ -510,7 +482,7 @@
 										<tbody>
 												<tr class='log' status='skip'>
 													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>12:00:44 AM</td>
+													<td class='timestamp'>7:22:23 AM</td>
 													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
@@ -520,19 +492,19 @@
 				</li>
 						</ul>
 				</li>
-				<li class='node level-1  fail' status='fail' test-id='15'>
+				<li class='node level-1  pass' status='pass' test-id='15'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Scenario: Verify that the "Keep in touch" form response is not "See you in 2019"</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:44 AM</span>
-						<span class='node-duration'>0h 0m 11s+950ms</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='node-time'>Feb 19, 2019 07:22:23 AM</span>
+						<span class='node-duration'>0h 0m 7s+248ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-2 leaf pass' status='pass' test-id='16'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Given User loads the home page</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:48 AM</span>
-						<span class='node-duration'>0h 0m 1s+740ms</span>
+						<span class='node-time'>Feb 19, 2019 07:22:27 AM</span>
+						<span class='node-duration'>0h 0m 2s+746ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -548,7 +520,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>12:00:50 AM</td>
+													<td class='timestamp'>7:22:30 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -556,12 +528,12 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf fail' status='fail' test-id='17'>
+				<li class='node level-2 leaf pass' status='pass' test-id='17'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And User scrolls down to the "Keep in touch" section</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:50 AM</span>
-						<span class='node-duration'>0h 0m 5s+835ms</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='node-time'>Feb 19, 2019 07:22:30 AM</span>
+						<span class='node-duration'>0h 0m 0s+264ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -574,25 +546,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>12:00:56 AM</td>
-													<td class='step-details'><pre>java.lang.IllegalStateException: Cannot find the section: Keep in touch!
-	at ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(CheckWebsiteElementsSteps.java:67)
-	at ✽.And User scrolls down to the "Keep in touch" section(CheckWebsiteElements.feature:6)
-</pre></td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:22:30 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf skip' status='skip' test-id='18'>
+				<li class='node level-2 leaf pass' status='pass' test-id='18'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And User fills in a valid e-mail address</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:56 AM</span>
-						<span class='node-duration'>0h 0m 0s+1ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Feb 19, 2019 07:22:30 AM</span>
+						<span class='node-duration'>0h 0m 0s+123ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -605,22 +574,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>12:00:56 AM</td>
-													<td class='step-details'>skipped</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:22:30 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf skip' status='skip' test-id='19'>
+				<li class='node level-2 leaf pass' status='pass' test-id='19'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And User fills in a nickname</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:56 AM</span>
-						<span class='node-duration'>0h 0m 0s+1ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Feb 19, 2019 07:22:30 AM</span>
+						<span class='node-duration'>0h 0m 0s+162ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -633,22 +602,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>12:00:56 AM</td>
-													<td class='step-details'>skipped</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:22:30 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf skip' status='skip' test-id='20'>
+				<li class='node level-2 leaf pass' status='pass' test-id='20'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And User selects an option from the drop-down</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:56 AM</span>
-						<span class='node-duration'>0h 0m 0s+1ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Feb 19, 2019 07:22:30 AM</span>
+						<span class='node-duration'>0h 0m 0s+130ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -661,43 +630,23 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>12:00:56 AM</td>
-													<td class='step-details'>skipped</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:22:30 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf skip' status='skip' test-id='21'>
+				<li class='node level-2 leaf pass' status='pass' test-id='21'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then The form response is not "See you in 2019" after "Join Us" button is clicked</div>						
-						<span class='node-time'>Feb 19, 2019 12:00:56 AM</span>
-						<span class='node-duration'>0h 0m 0s+1ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Feb 19, 2019 07:22:30 AM</span>
+						<span class='node-duration'>0h 0m 0s+0ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>12:00:56 AM</td>
-													<td class='step-details'>skipped</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
 				</li>
 						</ul>
 				</li>
@@ -758,14 +707,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>@mlTest</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label others'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
+							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -779,9 +728,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 18, 2019 11:59:54 PM</td>
+										<td>Feb 19, 2019 07:22:08 AM</td>
 										<td class='linked' test-id='1'>Quality Engineer Assignment that verifies various elements of the Magic Leap home page</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -800,86 +749,6 @@
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.IllegalStateException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Feb 19, 2019 12:00:02 AM</td>
-                                                        <td class='linked' test-id='4'>Quality Engineer Assignment that verifies various elements of the Magic Leap home page.Scenario: Verify that phrase exists on home page.And User scrolls down to the "Keep in touch" section</td>
-                                                        <td><pre><pre>java.lang.IllegalStateException: Cannot find the section: Keep in touch!
-	at ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(CheckWebsiteElementsSteps.java:67)
-	at ✽.And User scrolls down to the "Keep in touch" section(CheckWebsiteElements.feature:6)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Feb 19, 2019 12:00:37 AM</td>
-                                                        <td class='linked' test-id='9'>Quality Engineer Assignment that verifies various elements of the Magic Leap home page.Scenario: Fill out the "Keep in touch" section.And User scrolls down to the "Keep in touch" section</td>
-                                                        <td><pre><pre>java.lang.IllegalStateException: Cannot find the section: Keep in touch!
-	at ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(CheckWebsiteElementsSteps.java:67)
-	at ✽.And User scrolls down to the "Keep in touch" section(CheckWebsiteElements.feature:6)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Feb 19, 2019 12:00:50 AM</td>
-                                                        <td class='linked' test-id='17'>Quality Engineer Assignment that verifies various elements of the Magic Leap home page.Scenario: Verify that the "Keep in touch" form response is not "See you in 2019".And User scrolls down to the "Keep in touch" section</td>
-                                                        <td><pre><pre>java.lang.IllegalStateException: Cannot find the section: Keep in touch!
-	at ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(CheckWebsiteElementsSteps.java:67)
-	at ✽.And User scrolls down to the "Keep in touch" section(CheckWebsiteElements.feature:6)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -895,25 +764,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>17</div>
+					<div class='panel-lead'>15</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 18, 2019 11:59:54 PM</div>
+					<div class='panel-lead'>Feb 19, 2019 07:22:08 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 19, 2019 12:00:56 AM</div>
+			 		<div class='panel-lead'>Feb 19, 2019 07:22:30 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>61,912ms</div>
+					<div class='panel-lead'>22,629ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -930,8 +799,8 @@
 						<tr>
 							<td>@mlTest</td>
 							<td>0</td>
-							<td>1</td>
 							<td>0</td>
+							<td>1</td>
 						</tr>
 					</table>
 				</div>
@@ -946,22 +815,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 3,
-				failParent: 3,
+				passParent: 13,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 11,
-				exceptionsParent: 14,
+				skipParent: 4,
+				exceptionsParent: 4,
 				
-				passChild: 3,
-				failChild: 3,
+				passChild: 11,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 11,
+				skipChild: 4,
 				infoChild: 0,
-				exceptionsChild: 14,
+				exceptionsChild: 4,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
