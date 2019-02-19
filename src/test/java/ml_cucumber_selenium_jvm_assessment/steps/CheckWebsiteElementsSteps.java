@@ -1,8 +1,10 @@
 package ml_cucumber_selenium_jvm_assessment.steps;
 
 import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.fail;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -47,7 +49,7 @@ public class CheckWebsiteElementsSteps {
 	
 	public void Steps() 
 	{
-		 driver = WebHooks.driver;
+		 driver = WebHooks.driver; // not launching chromeDriver 
 	}*/
 	
 	// Background
@@ -186,17 +188,41 @@ public class CheckWebsiteElementsSteps {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(
 		        ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]")));
-		//WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]"));
 		element.click();
 		
 		Assert.assertEquals(true, element.isDisplayed());
+
+		// begin negative flow
+		boolean textFound=false;
+		try
+		{ 
+		    new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]")));
+
+		    textFound=true;
+
+		}catch(Exception e)
+		{
+		    System.out.println("The Button isn't present. Exiting!!");
+		    driver.findElement(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]")).click();
+		}
+
+		if(textFound)
+		{
+			//positive flow
+			if (element.isDisplayed()) {
+	            System.out.println("Found the text element: Thanks! See ya Soon!");
+	        } else {
+	            throw new IllegalStateException("Cannot find the text element: See you in 2019");
+	        }
+		}
 		
-		if (element.isDisplayed()) {
-            System.out.println("Found the text element: Thanks! See ya Soon!");
-        } else {
-            throw new IllegalStateException("Cannot find the text element: See you in 2019");
-        }
-		
+		// String text = "you in";
+		//try {
+	    //    driver.findElement(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]"));
+	    //    Assert.fail("Link with text <" + text + "> is present");
+	    // } catch (NoSuchElementException ex) { 
+	        /* do nothing, link is not present, assert is passed */ 
+	    //}
 		
 		// verify response does not appear
 		//String actualString = driver.findElement(By.xpath("//*[contains(text(), 'See you in 2019')]")).getText();
