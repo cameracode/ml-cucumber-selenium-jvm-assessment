@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.PendingException;
@@ -22,10 +23,6 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
 
-//import FormSubmitAction;
-//import pageobjects.ContactPage;
-//import pageobjects.PageMessages;
-
 public class CheckWebsiteElementsSteps {
 	
 	public WebDriver driver;
@@ -34,23 +31,23 @@ public class CheckWebsiteElementsSteps {
     public void openBrowser() 
     {
         System.out.println("Starting scenario preprocessing...");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Camera\\Documents\\GitHub\\ml-cucumber-selenium-jvm-assessment\\src\\test\\java\\ml_cucumber_selenium_jvm_assessment\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", ".\\src\\test\\java\\ml_cucumber_selenium_jvm_assessment\\resources\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(70, TimeUnit.SECONDS);
     }
     
     /*public void setup() {
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Camera\\Documents\\GitHub\\ml-cucumber-selenium-jvm-assessment\\src\\test\\java\\ml_cucumber_selenium_jvm_assessment\\resources\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", ".\\src\\test\\java\\ml_cucumber_selenium_jvm_assessment\\resources\\geckodriver.exe");
 		this.driver = new FirefoxDriver();
 		this.driver.manage().window().maximize();
-		this.driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-	}
-	
-	public void Steps() 
-	{
-		 driver = WebHooks.driver; // not launching chromeDriver 
+		this.driver.manage().timeouts().pageLoadTimeout(70, TimeUnit.SECONDS);
 	}*/
+	
+	//public void Steps() 
+	//{
+	//	 driver = WebHooks.driver; // not launching chromeDriver 
+	//}
 	
 	// Background
 	@Given("^User loads the home page$")
@@ -62,9 +59,7 @@ public class CheckWebsiteElementsSteps {
 
 	@Given("^User scrolls down to the \"([^\"]*)\" section$")
 	public void user_scrolls_down_to_the_section(String arg1) throws Throwable {
-		// Finds element "Keep in touch" by XPATH - //*[contains(text(), 'Keep in touch')]
-		//String keepInTouch = "Keep in touch";
-		//List<WebElement> keepInTouchList = driver.findElements(By.xpath("//*[contains(text(),'" + keepInTouch + "')]"));
+		
 		WebElement keepInTouch = driver.findElement(By.xpath("//*[contains(text(), 'Keep in touch')]"));
 		keepInTouch.click();
 		
@@ -78,10 +73,6 @@ public class CheckWebsiteElementsSteps {
 	// start test 1, scenario 1
 	@When("^User reaches the section \"([^\"]*)\"$")
 	public void user_reaches_the_section(String arg1) throws Throwable {
-		// Finds element Magic Leap One Creator Edition by XPATHs
-		//String magicLeapOne = "Magic Leap One";
-		//String creatorEdition = "Creator Edition";
-		
 		By magicLeapOneSelector = By.xpath("//a[contains(text(), 'Magic Leap One') or contains(text(), 'magic leap one')]");
 		By creatorEditionSelector = By.xpath("//a[contains(text(), 'Creator Edition') or contains(text(), 'creator edition')]");
 		List<WebElement> magicLeapOneList = driver.findElements(magicLeapOneSelector);
@@ -146,7 +137,8 @@ public class CheckWebsiteElementsSteps {
 		footerDropdown.click();
 		
 		// fill element with dropdown item
-		footerDropdown.sendKeys("");
+		Select footerDropdownItem = new Select(driver.findElement(By.xpath("//*[@id=\"footer_i_am_a\"]")));
+		footerDropdownItem.selectByVisibleText("I'm a developer");
 	}
 	
 	@When("^User clicks the \"([^\"]*)\" button$")
@@ -202,7 +194,7 @@ public class CheckWebsiteElementsSteps {
 
 		}catch(Exception e)
 		{
-		    System.out.println("The Button isn't present. Exiting!!");
+		    System.out.println("The text element isn't present. Exiting!!");
 		    driver.findElement(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]")).click();
 		}
 
@@ -215,27 +207,5 @@ public class CheckWebsiteElementsSteps {
 	            throw new IllegalStateException("Cannot find the text element: See you in 2019");
 	        }
 		}
-		
-		// String text = "you in";
-		//try {
-	    //    driver.findElement(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]"));
-	    //    Assert.fail("Link with text <" + text + "> is present");
-	    // } catch (NoSuchElementException ex) { 
-	        /* do nothing, link is not present, assert is passed */ 
-	    //}
-		
-		// verify response does not appear
-		//String actualString = driver.findElement(By.xpath("//*[contains(text(), 'See you in 2019')]")).getText();
-		//assertTrue(driver.findElement(By.xpath("//*[contains(text(), 'Thanks! See ya Soon!')]")).getText().contains("Thanks! See ya Soon!")); 
-		
-		
-		//WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[contains(text(), 'See you in 2019')]"));
-		//Assert.assertEquals(true, joinUsBtnResponse.isDisplayed());
-		
-		/*WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[@id=\"cta-thanks-text\"]"));
-		if (joinUsBtnResponse.isDisplayed() != true)
-		{
-			Assert.assertEquals(false, joinUsBtnReesponse.isDisplayed());
-		}*/
 	}
 }
