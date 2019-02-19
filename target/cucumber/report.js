@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5290096400,
+  "duration": 5006835800,
   "status": "passed"
 });
 formatter.background({
@@ -37,7 +37,7 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_loads_the_home_page()"
 });
 formatter.result({
-  "duration": 3174143400,
+  "duration": 2846162900,
   "status": "passed"
 });
 formatter.match({
@@ -50,7 +50,7 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(String)"
 });
 formatter.result({
-  "duration": 336194600,
+  "duration": 161919300,
   "status": "passed"
 });
 formatter.scenario({
@@ -87,7 +87,7 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_reaches_the_section(String)"
 });
 formatter.result({
-  "duration": 48194800,
+  "duration": 124622000,
   "status": "passed"
 });
 formatter.match({
@@ -100,11 +100,11 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.the_phrase_exists(String)"
 });
 formatter.result({
-  "duration": 278084700,
+  "duration": 263139600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4100245700,
+  "duration": 4049114300,
   "status": "passed"
 });
 formatter.background({
@@ -128,7 +128,7 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_loads_the_home_page()"
 });
 formatter.result({
-  "duration": 1087142600,
+  "duration": 2627282200,
   "status": "passed"
 });
 formatter.match({
@@ -141,7 +141,7 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(String)"
 });
 formatter.result({
-  "duration": 4113343600,
+  "duration": 161292100,
   "status": "passed"
 });
 formatter.scenario({
@@ -202,28 +202,28 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_reaches(String)"
 });
 formatter.result({
-  "duration": 146624700,
+  "duration": 133522000,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckWebsiteElementsSteps.user_fills_in_a_valid_e_mail_address()"
 });
 formatter.result({
-  "duration": 350631700,
+  "duration": 321745100,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckWebsiteElementsSteps.user_fills_in_a_nickname()"
 });
 formatter.result({
-  "duration": 303204100,
+  "duration": 202295500,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckWebsiteElementsSteps.user_selects_an_option_from_the_drop_down()"
 });
 formatter.result({
-  "duration": 144616900,
+  "duration": 112764700,
   "status": "passed"
 });
 formatter.match({
@@ -236,7 +236,7 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_clicks_the_button(String)"
 });
 formatter.result({
-  "duration": 342213300,
+  "duration": 130450600,
   "status": "passed"
 });
 formatter.match({
@@ -249,11 +249,11 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_should_be_shown_the_response(String)"
 });
 formatter.result({
-  "duration": 148663200,
+  "duration": 658419200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3909059900,
+  "duration": 3826644800,
   "status": "passed"
 });
 formatter.background({
@@ -277,7 +277,7 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_loads_the_home_page()"
 });
 formatter.result({
-  "duration": 1466801000,
+  "duration": 1010527000,
   "status": "passed"
 });
 formatter.match({
@@ -290,7 +290,7 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_scrolls_down_to_the_section(String)"
 });
 formatter.result({
-  "duration": 7607125400,
+  "duration": 1560478200,
   "status": "passed"
 });
 formatter.scenario({
@@ -336,21 +336,21 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_fills_in_a_valid_e_mail_address()"
 });
 formatter.result({
-  "duration": 618962900,
+  "duration": 811017500,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckWebsiteElementsSteps.user_fills_in_a_nickname()"
 });
 formatter.result({
-  "duration": 292437500,
+  "duration": 241655100,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckWebsiteElementsSteps.user_selects_an_option_from_the_drop_down()"
 });
 formatter.result({
-  "duration": 144180000,
+  "duration": 199608300,
   "status": "passed"
 });
 formatter.match({
@@ -363,7 +363,7 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.user_clicks_the_button_for_the_second_time(String)"
 });
 formatter.result({
-  "duration": 165281200,
+  "duration": 109861100,
   "status": "passed"
 });
 formatter.match({
@@ -376,8 +376,8 @@ formatter.match({
   "location": "CheckWebsiteElementsSteps.the_form_response_is_not(String)"
 });
 formatter.result({
-  "duration": 74699000,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(), \u0027See you in 2019\u0027)]\"}\n  (Session info: chrome\u003d72.0.3626.109)\n  (Driver info: chromedriver\u003d2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform\u003dWindows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:25:48\u0027\nSystem info: host: \u0027PROMETHEUS\u0027, ip: \u0027192.168.1.49\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_192\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\\Users\\Camera\\AppData\\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:34280}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.109, webStorageEnabled: true}\nSession ID: 275e827ca67447b393456f9a3b93eaab\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(), \u0027See you in 2019\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.the_form_response_is_not(CheckWebsiteElementsSteps.java:179)\r\n\tat ✽.Then The form response is not \"See you in 2019\"(CheckWebsiteElements.feature:29)\r\n",
+  "duration": 26911700,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(), \u0027See you in 2019\u0027)]\"}\n  (Session info: chrome\u003d72.0.3626.109)\n  (Driver info: chromedriver\u003d2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform\u003dWindows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:25:48\u0027\nSystem info: host: \u0027PROMETHEUS\u0027, ip: \u0027192.168.1.49\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_192\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\\Users\\Camera\\AppData\\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:47202}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.109, webStorageEnabled: true}\nSession ID: e0cc721d3751ee3bcbf25a8ed15d584a\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(), \u0027See you in 2019\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat ml_cucumber_selenium_jvm_assessment.steps.CheckWebsiteElementsSteps.the_form_response_is_not(CheckWebsiteElementsSteps.java:183)\r\n\tat ✽.Then The form response is not \"See you in 2019\"(CheckWebsiteElements.feature:29)\r\n",
   "status": "failed"
 });
 });

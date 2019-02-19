@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.Before;
@@ -152,13 +154,15 @@ public class CheckWebsiteElementsSteps {
 	@Then("^User should be shown the response \"([^\"]*)\"$")
 	public void user_should_be_shown_the_response(String arg1) throws Throwable {
 		// verify response appears 
-		WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]"));
-		//WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[@id=\"cta-thanks-text\"]"));
-		joinUsBtnResponse.click();
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement element = wait.until(
+		        ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]")));
+		//WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]"));
+		element.click();
 		
-		Assert.assertEquals(true, joinUsBtnResponse.isDisplayed());
+		Assert.assertEquals(true, element.isDisplayed());
 		
-		if (joinUsBtnResponse.isDisplayed()) {
+		if (element.isDisplayed()) {
             System.out.println("Found the text element: Thanks! See ya Soon!");
         } else {
             throw new IllegalStateException("Cannot find the text element: Thanks! See ya Soon!");
