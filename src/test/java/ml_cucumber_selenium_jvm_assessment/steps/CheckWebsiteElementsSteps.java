@@ -56,7 +56,6 @@ public class CheckWebsiteElementsSteps {
 	    // Write code here that turns the phrase above into concrete actions
 		String url = "https://www.magicleap.com";
 		driver.get(url);
-		//throw new PendingException();
 	}
 
 	@Given("^User scrolls down to the \"([^\"]*)\" section$")
@@ -72,10 +71,9 @@ public class CheckWebsiteElementsSteps {
         } else {
             throw new IllegalStateException("Cannot find the section: Keep in touch!");
         }
-	    //throw new PendingException();
 	}
 	
-	// Start Test 1, Section 1
+	// start test 1, scenario 1
 	@When("^User reaches the section \"([^\"]*)\"$")
 	public void user_reaches_the_section(String arg1) throws Throwable {
 		// Finds element Magic Leap One Creator Edition by XPATHs
@@ -109,7 +107,7 @@ public class CheckWebsiteElementsSteps {
         }
 	}
 	
-	// start 1 Section 2
+	// start test 1 scenario 2
 	@When("^User reaches \"([^\"]*)\"$")
 	public void user_reaches(String arg1) throws Throwable {
 		// find Keep in touch section
@@ -126,7 +124,7 @@ public class CheckWebsiteElementsSteps {
 		// fill element with a valid e-mail address
 		footerEmail.sendKeys("RickSanchez@c137.com");
 		
-		// TODO assert if invalid type of e-mail
+		// TODO assert if invalid type of e-mail, check extensions etc
 	}
 	
 	@When("^User fills in a nickname$")
@@ -162,9 +160,9 @@ public class CheckWebsiteElementsSteps {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(
 		        ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]")));
-		//WebElement joinUsBtnResponse = driver.findElement(By.xpath("//*[contains(text(), 'Thanks! See ya soon!')]"));
 		element.click();
 		
+		// Handle things when they get wonky
 		Assert.assertEquals(true, element.isDisplayed());
 		
 		if (element.isDisplayed()) {
