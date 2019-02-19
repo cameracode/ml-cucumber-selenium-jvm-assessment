@@ -19,7 +19,7 @@
 - [x] fill out element "//*[@id="footer_nickname"]" (nickname for "Keep in touch")
 - [x] select drop-down element "//*[@id="footer_i_am_a"]" ("Tell us about about yourself" drop-down for "Keep in touch" form)
 - [x] Click() "//*[@id="footer-submit-button"]/div" button
-- [x] Verify response "Thanks! See ya soon!" once "//*[@id="footer-submit-button"]/div" has been clicked
+- [x] Verify response "Thanks! See ya soon!" once element "Join Us" button with xpath "//*[@id="footer-submit-button"]/div" has been clicked
 
 ### Test 2:
 - [x] use the magic leap homepage https://www.magicleap.com
@@ -28,13 +28,9 @@
 - [x] use xpath - fill out element "//*[@id="footer_nickname"]" (nickname for "Keep in touch")
 - [x] use xpath - select drop-down element "//*[@id="footer_i_am_a"]" ("Tell us about about yourself" drop-down for "Keep in touch" form)
 - [x] Click() "//*[@id="footer-submit-button"]/div" button
-- [x] Verify response is not "See you in 2019" once "//*[@id="footer-submit-button"]/div" has been clicked
+- [x] Verify response is not "See you in 2019" once element "Join Us" button with xpath"//*[@id="footer-submit-button"]/div" has been clicked
 
-### Test 3:
-- [x] Wrote a performance test that does over 1000 GET's of https://www.magicleap.com utilizing PowerShell's Invoke-WebRequest and generated a report utilizing Google Charts & ConvertTo-HTML
-- PowerSHell Report Name - ml_load_report.html
-- [x] Wrote a performance test that does over 1000 GET's of https://www.magicleap.com with bash and utilizing Apache Benchmark that outputs a report to CSV
-- Bash report name - report_apache_benchmark.csv
+
 
 ### Running the Tests (based on Windows 10 x64):
 #### Pre-requisites
