@@ -51,6 +51,7 @@ Cucumber Eclipse Plugin Manual Install  -
 - git clone https://github.com/cameracode/ml-cucumber-js.git (Test 1 & 2 cucumber-js)
 - git clone https://github.com/cameracode/ml-performance-test.git (Test 3 powershell & bash) 
 - mvn clean compile
+- mvn install
 - mvn test
 - open target/report.html
 
