@@ -17,6 +17,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -36,6 +37,13 @@ public class CheckWebsiteElementsSteps {
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(70, TimeUnit.SECONDS);
     }
+	
+	@After
+	public void closeBrowser()
+	{
+		System.out.println("Closing chromedriver instance.");
+		driver.quit();
+	}
     
     /*public void setup() {
 		System.setProperty("webdriver.gecko.driver", ".\\src\\test\\java\\ml_cucumber_selenium_jvm_assessment\\resources\\geckodriver.exe");
