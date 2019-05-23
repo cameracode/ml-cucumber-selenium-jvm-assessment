@@ -1,5 +1,5 @@
-@mlTest
-Feature: Quality Engineer Assignment that verifies various elements of the Magic Leap home page
+@serveTest
+Feature: Exploration of BDD for the Serve Secure Site
 	
 	Background: 
 		Given User loads the home page
