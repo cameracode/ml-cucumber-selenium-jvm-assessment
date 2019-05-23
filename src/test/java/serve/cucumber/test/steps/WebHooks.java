@@ -1,4 +1,4 @@
-package ml_cucumber_selenium_jvm_assessment.steps;
+package serve.cucumber.test.steps;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;

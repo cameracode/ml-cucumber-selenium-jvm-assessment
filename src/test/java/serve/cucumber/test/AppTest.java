@@ -1,4 +1,4 @@
-package ml_cucumber_selenium_jvm_assessment;
+package serve.cucumber.test;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

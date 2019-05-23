@@ -1,4 +1,4 @@
-package ml_cucumber_selenium_jvm_assessment.runner;
+package serve.cucumber.test.runner;
 
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
